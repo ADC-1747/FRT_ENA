@@ -1,5 +1,6 @@
 # FRT_ENA
-## FRT project
+
+### FRT project
 
 ### Industry type: 
 Fin Tech

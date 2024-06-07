@@ -1,0 +1,2 @@
+AZ-SA-CS = Azure Storage Account connection string
+AZ-SA-CN = Container Name

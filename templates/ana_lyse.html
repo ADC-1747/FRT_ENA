@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Analyse</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+        
+        
+      
+    
+    
+</head>
+
+
+<body>
+    
+    <div class="container">
+        <br>
+        {% extends "nav_bar.html" %}
+        {% block content %}
+         
+        
+          <br>
+          <div class="row">
+            <h1>Welcome to  Analysis of {{symbol}} !!!</h1>
+            <br>
+            <p></p>
+            <h4>Past Price-Volume movements</h4>
+            <p></p>
+            <br>
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    
+                    <th scope="col">Timestamp(IST)</th>
+                    <th scope="col">Change(in INR)</th>
+                    <th scope="col">Volume</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                    {% for x in past_data %}
+                        <tr>
+                            <th scope="row">{{x[0]}}</th>
+                            <td>{{x[1]}}</td>
+                            <td>{{x[2]}}</td>
+                            
+                        </tr>
+
+                    {% endfor %}
+                  
+                  
+                  
+                </tbody>
+              </table>
+              <br>
+              <h5>Average Volume for current quarter : {{avg_vol}}</h5>
+              <h5>Current volume : {{cur_vol}}</h5>
+              <h5>Current price : {{cur_price}}</h5>
+              <h5>Current change : {{cur_change}}</h5>
+              <p></p>
+              <h4>Current Trend</h4>
+              <p></p>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    
+                    <th scope="col">Timestamp(IST)</th>
+                    <th scope="col">Change(in INR)</th>
+                    <th scope="col">Volume</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                    {% for x in cur_trend %}
+                        <tr>
+                            <th scope="row">{{x[0]}}</th>
+                            <td>{{x[1]}}</td>
+                            <td>{{x[2]}}</td>
+                            
+                        </tr>
+
+                    {% endfor %}
+                  
+                  
+                  
+                </tbody>
+              </table>
+              <p></p>
+              <h3>Conclusion : {{tip}}</h3>
+              <p></p>
+            <br>
+            <a  class="btn btn-success buy" href="/buy/{{symbol}}/{{cur_price}}" role="button"  onclick="return confirm('Investment are subject to market risks. This analysis is only for educational purposes and the Equity News Analyser is not responsible for any profit or loss incured by the user. By clicking ok you agree to the above statement and execute your buy order.')">Buy</a>
+            <a  class="btn btn-danger sell" href="/sell/{{symbol}}/{{cur_price}}" role="button" onclick="return confirm('Investment are subject to market risks. This analysis is only for educational purposes and the Equity News Analyser is not responsible for any profit or loss incured by the user. By clicking ok you agree to the above statement and execute your sell order.')" >Sell</a>
+            <p></p>
+        </div>
+        {% endblock %}
+    </div>
+    
+</body>
+
+
+</html>

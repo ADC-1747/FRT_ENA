@@ -1,7 +1,8 @@
 # FRT_ENA
 FRT project
 
-Industry type - Fin Tech
+Industry type: 
+Fin Tech
 
 
 Project Title - Equity News Analyser

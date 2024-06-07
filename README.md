@@ -8,6 +8,7 @@ Project Title - Equity News Analyser
 Problem Statement - To analyse the effect of news on the price and volume of an equity/stock/share from NSE(National Stock                       Exchange) NIFTY-50.
 
 Project Description - 
+  
   Core Idea :- To Build a web tool that can analyse the effect of news on the price and volume of an equity/stock/share from     NSE(National Stock Exchange) NIFTY-50. 
 
   Technologies used :- HTML, CSS, Flask, SQLite, Azure app services, Azure blob storage, Azure AI bot service.

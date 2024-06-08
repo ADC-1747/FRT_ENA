@@ -20,8 +20,8 @@ from azure.storage.blob import BlobServiceClient
 
 
 
-connect_str = os.environ['AZ-SA-CS']
-container_name = os.environ['AZ-SA-CN']
+connect_str = os.environ['AZ_SA_CS']
+container_name = os.environ['AZ_SA_CN']
 
 
 blob_service_client = BlobServiceClient.from_connection_string(conn_str=connect_str)

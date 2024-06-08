@@ -59,11 +59,12 @@ def portfolio():
     plt.axis('equal')
     
     plt.savefig(os.path.join(basedir, app.config['UPLOAD_FOLDER'], "port_div.png"))
+    '''
     with open(file=os.path.join(basedir,app.config['UPLOAD_FOLDER'], 'port_div.png'), mode="rb") as data:
         container_client.upload_blob(name="port_div.png", data=data, overwrite=True)
-        
+    '''   
     plt.close()
-    os.remove(os.path.join(basedir, app.config['UPLOAD_FOLDER'], "port_div.png"))
+    ##############os.remove(os.path.join(basedir, app.config['UPLOAD_FOLDER'], "port_div.png"))
 
     ######### Delete old ############
     ######### Upload to azure blob storage #############

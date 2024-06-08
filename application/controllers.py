@@ -58,13 +58,13 @@ def portfolio():
     plt.pie(np.array(p_v), labels = pi.keys(), autopct='%1.1f%%', startangle = 90, wedgeprops = {"edgecolor" : "black",'linewidth': 2,'antialiased': True})
     plt.axis('equal')
     
-    plt.savefig(os.path.join(basedir, app.config['UPLOAD_FOLDER'], "port_div.png"))
+    plt.savefig(os.path.join(basedir, app.config['UPLOAD_FOLDER'], "port_div.avif"))
     
-    with open(file=os.path.join(basedir,app.config['UPLOAD_FOLDER'], 'port_div.png'), mode="rb") as data:
-        container_client.upload_blob(name="port_div.png", data=data, overwrite=True)
+    with open(file=os.path.join(basedir,app.config['UPLOAD_FOLDER'], 'port_div.avif'), mode="rb") as data:
+        container_client.upload_blob(name="port_div.avif", data=data, overwrite=True)
        
     plt.close()
-    os.remove(os.path.join(basedir, app.config['UPLOAD_FOLDER'], "port_div.png"))
+    os.remove(os.path.join(basedir, app.config['UPLOAD_FOLDER'], "port_div.avif"))
 
     ######### Delete old ############
     ######### Upload to azure blob storage #############

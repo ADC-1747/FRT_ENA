@@ -29,6 +29,9 @@ To analyse the effect of news on the price and volume of an equity/stock/share f
 
       <img width="960" alt="App services" src="https://github.com/ADC-1747/FRT_ENA/assets/148060235/c66610b6-6fe6-49d6-9362-f3976f41b2bb">
 
+      <img width="960" alt="Deploy" src="https://github.com/ADC-1747/FRT_ENA/assets/148060235/feedc98b-02ef-47c2-825a-c8b0fbb81bf6">
+
+
       
    2. Azure Blob Storage - For storing all the images being used in the application and then publising it to the webpage.
       
@@ -37,6 +40,9 @@ To analyse the effect of news on the price and volume of an equity/stock/share f
       
    **Azure AI Service** -
    1. Azure AI Bot service - For creating and embedding a chat bot in the web application which can answer basic questions about the application.
+
+      <img width="960" alt="app_bot" src="https://github.com/ADC-1747/FRT_ENA/assets/148060235/a41fefd0-b1c1-4007-a206-9f9108d8aac6">
+
 
       <img width="960" alt="Custom QnA" src="https://github.com/ADC-1747/FRT_ENA/assets/148060235/85a3946e-857b-4eb5-acc2-fa6b29f5fb00">
 

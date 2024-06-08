@@ -53,6 +53,16 @@ The Azure Blob storage is interconnected with the Azure App Services as the imag
 All the Azure services used are interconnected and thier interconnectivity is essential for the functionality of the project.
 
 
+<img width="960" alt="app_home" src="https://github.com/ADC-1747/FRT_ENA/assets/148060235/8d411be7-eee7-4c8c-8872-9663282394ae">
+
+<img width="959" alt="app_news" src="https://github.com/ADC-1747/FRT_ENA/assets/148060235/20e20c67-48d2-458f-b057-7524ac016175">
+
+<img width="960" alt="app_bot" src="https://github.com/ADC-1747/FRT_ENA/assets/148060235/11dd54a5-eb2f-43c5-82ba-77de5698f683">
+
+<img width="960" alt="app_analyse" src="https://github.com/ADC-1747/FRT_ENA/assets/148060235/9d5dbfb5-4920-422c-8b43-c2e7abdaebbf">
+
+
+
 
 
       

@@ -4,7 +4,7 @@ from flask import current_app as app
 from application.models import *
 from application.database import db
 from application.config import basedir
-from pygooglenews.py import GoogleNews
+from application.pygooglenews import GoogleNews
 import json
 import time
 from tvDatafeed import TvDatafeed, Interval, TvDatafeedLive

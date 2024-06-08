@@ -67,6 +67,12 @@ All the Azure services used are interconnected and thier interconnectivity is es
 
 <img width="960" alt="app_analyse" src="https://github.com/ADC-1747/FRT_ENA/assets/148060235/9d5dbfb5-4920-422c-8b43-c2e7abdaebbf">
 
+<img width="960" alt="app_port_1" src="https://github.com/ADC-1747/FRT_ENA/assets/148060235/29b4f390-636f-488c-9bfc-0801f3d80841">
+
+<img width="960" alt="app_port_2" src="https://github.com/ADC-1747/FRT_ENA/assets/148060235/bb63ca9f-dee8-437e-8822-c99966b112b2">
+
+
+
 
 
 

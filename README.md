@@ -22,7 +22,6 @@ To analyse the effect of news on the price and volume of an equity/stock/share f
 
   **Working** -  The web app collects the latest news about the stock and then depending on whether the news is good or bad the system classifies it into Long(Good news) or Short(Bad news) category. At the time of news breakout mostly people lose money due to late entry into the market or early exit from the market. So in order to prevent loss, now the user is presented with Past price volume action data and current data where the user is given analysis about the effect of news on the stock and then depending on choice of user he/she can buy or sell the stock. The portfolio displays all the active holding of the user and its profit/loss and the portfolio diversification chart.
 
-### Important Note - The portfolio page or the analyse page or the buy or sell action can sometimes show Internal server error due to live/current market data not being received by the tvDatafeed library so please reload the page the internal server error will go away and the selected action will be executed. This error is from the library side and not from my code, 99% times it works fine just 1% times it shows this error, for now i have added an exception handling page which says the user to reload the page. 
 
 ### Azure Services used:
    **Azure Core Services** -

@@ -8,5 +8,6 @@ dateparse
 dateparser
 requests
 azure-storage-blob
+matplotlib
 git+https://github.com/rongardF/tvdatafeed.git
 

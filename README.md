@@ -26,6 +26,9 @@ To analyse the effect of news on the price and volume of an equity/stock/share f
 ### Azure Services used:
    **Azure Core Services** -
    1. Azure App Services - For delpoying the Flask based web application and also deploying the azure AI Bot.
+
+      <img width="960" alt="App services" src="https://github.com/ADC-1747/FRT_ENA/assets/148060235/c66610b6-6fe6-49d6-9362-f3976f41b2bb">
+
       
    2. Azure Blob Storage - For storing all the images being used in the application and then publising it to the webpage.
       
@@ -36,6 +39,12 @@ To analyse the effect of news on the price and volume of an equity/stock/share f
    1. Azure AI Bot service - For creating and embedding a chat bot in the web application which can answer basic questions about the application.
 
       <img width="960" alt="Custom QnA" src="https://github.com/ADC-1747/FRT_ENA/assets/148060235/85a3946e-857b-4eb5-acc2-fa6b29f5fb00">
+
+      <img width="960" alt="rg1" src="https://github.com/ADC-1747/FRT_ENA/assets/148060235/42380a6c-0633-45fe-8cb0-84d0ee6a30bf">
+
+      <img width="960" alt="rg2" src="https://github.com/ADC-1747/FRT_ENA/assets/148060235/eb100a00-4008-4ddb-bfe1-7b5ed987e2ea">
+
+
 
 
 ### Interconnectivity between Services:

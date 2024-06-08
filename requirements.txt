@@ -3,6 +3,5 @@ Flask-SQLAlchemy
 Flask-Security
 Flask-Restful
 pygooglenews
-tvDatafeed
 azure-storage-blob
 

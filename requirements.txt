@@ -2,6 +2,10 @@ Flask
 Flask-SQLAlchemy
 Flask-Security
 Flask-Restful
+feedparser
+beautifulsoup4
+dateparse
+requests
 pygooglenews
 azure-storage-blob
 git+https://github.com/rongardF/tvdatafeed.git

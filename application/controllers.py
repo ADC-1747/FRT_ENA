@@ -42,7 +42,13 @@ def portfolio():
     pi = {}
     for x in pe:
         live_data=tvl.get_hist(symbol=x.name,exchange='NSE',interval=Interval.in_5_minute,n_bars=10000,  extended_session=False, timeout=-1)
-        cur_price = live_data["close"][-1]
+        try:
+            cur_price = live_data["close"][-1]
+        except TypeError:
+            return render_template('try_again.html',error="Sorry for the inconvenience, please try again by reloading this page your action will be executed.")
+        
+        
+
         pl = 0
         if x.position == "Long":
             pl = x.price - cur_price
@@ -139,8 +145,11 @@ def analyse(symbol):
     # index
     index_data = tv.get_hist(symbol=symbol,exchange='NSE',interval=Interval.in_1_minute,n_bars=10000,extended_session=False)
     live_data=tvl.get_hist(symbol=symbol,exchange='NSE',interval=Interval.in_5_minute,n_bars=10000,  extended_session=False, timeout=-1)
+    try:
+        err_check = live_data["close"][-1]
+    except TypeError:
+        return render_template('try_again.html',error="Sorry for the inconvenience, please try again by reloading this page your action will be executed.")
     
-    print(live_data)
     ind = {}
     for i in range(len(live_data.index)):
         ind[i] = live_data.index[i]

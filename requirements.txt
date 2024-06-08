@@ -5,6 +5,7 @@ Flask-Restful
 feedparser
 beautifulsoup4
 dateparse
+dateparser
 requests
 azure-storage-blob
 git+https://github.com/rongardF/tvdatafeed.git

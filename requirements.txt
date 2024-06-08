@@ -4,5 +4,5 @@ Flask-Security
 Flask-Restful
 pygooglenews
 azure-storage-blob
-git+https://github.com/rongardF/tvdatafeed.git
+--upgrade --no-cache-dir git+https://github.com/rongardF/tvdatafeed.git
 

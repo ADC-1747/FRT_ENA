@@ -129,7 +129,7 @@ def refresh_news():
             lne = LNews(ln=L_new_s[i][0],ls=L_new_s[i][1]) 
             db.session.add(lne)
             db.session.commit()
-    if S_news_s != []:
+    if S_new_s != []:
         snd = SNews.query.delete()
         db.session.commit()
         for i in range(len(S_new_s)):

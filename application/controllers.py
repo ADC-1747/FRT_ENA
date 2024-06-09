@@ -45,7 +45,7 @@ def portfolio():
         try:
             cur_price = live_data["close"][-1]
         except TypeError:
-            return render_template('try_again.html',error="Sorry for the inconvenience, please try again by reloading this page your action will be executed.")
+            return render_template('try_again.html',error="The Live/Current Market data is still loading, sorry for the inconvenience, please try again by reloading this page your action will be executed.")
         
         
 
@@ -95,8 +95,8 @@ def refresh_news():
     gn = GoogleNews(lang = 'en', country = 'IN')
     L_new_s = []
     S_new_s = []
-    lnd = LNews.query.delete()
-    snd = SNews.query.delete()
+    
+    
     
     comps = Nifty.query.all()
 
@@ -120,18 +120,23 @@ def refresh_news():
                     S_new_s.append([entry["title"] + entry["published"] , x.symbol])
                 time.sleep(0.25)
                 break
-    
-    for i in range(len(L_new_s)):
-        L_new_s[i][0] = (str(i+1)+". ") + L_new_s[i][0]
-        lne = LNews(ln=L_new_s[i][0],ls=L_new_s[i][1]) 
-        db.session.add(lne)
+                
+    if L_new_s != []:
+        lnd = LNews.query.delete()
         db.session.commit()
-    
-    for i in range(len(S_new_s)):
-        S_new_s[i][0] = (str(i+1)+". ") + S_new_s[i][0] 
-        sne = SNews(sn=S_new_s[i][0],ss=S_new_s[i][1]) 
-        db.session.add(sne)
+        for i in range(len(L_new_s)):
+            L_new_s[i][0] = (str(i+1)+". ") + L_new_s[i][0]
+            lne = LNews(ln=L_new_s[i][0],ls=L_new_s[i][1]) 
+            db.session.add(lne)
+            db.session.commit()
+    if S_news_s != []:
+        snd = SNews.query.delete()
         db.session.commit()
+        for i in range(len(S_new_s)):
+            S_new_s[i][0] = (str(i+1)+". ") + S_new_s[i][0] 
+            sne = SNews(sn=S_new_s[i][0],ss=S_new_s[i][1]) 
+            db.session.add(sne)
+            db.session.commit()
 
     return redirect(url_for('news'))
 
@@ -148,7 +153,7 @@ def analyse(symbol):
     try:
         err_check = live_data["close"][-1]
     except TypeError:
-        return render_template('try_again.html',error="Sorry for the inconvenience, please try again by reloading this page your action will be executed.")
+        return render_template('try_again.html',error="The Live/Current Market data is still loading, sorry for the inconvenience, please try again by reloading this page your action will be executed.")
     
     ind = {}
     for i in range(len(live_data.index)):

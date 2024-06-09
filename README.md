@@ -73,7 +73,7 @@ All the Azure services used are interconnected and thier interconnectivity is es
 <img width="960" alt="app_port_2" src="https://github.com/ADC-1747/FRT_ENA/assets/148060235/bb63ca9f-dee8-437e-8822-c99966b112b2">
 
 
-### Note:- Upon clicking any of the refresh news or update portfolio or analyse or buy or sell buttons please wait for around 30 to 40 seconds as it takes time to search through the real time market data. 
+### Note:- Upon clicking any of the refresh news or news or portfolio or update portfolio or analyse or buy or sell buttons please wait for around 30 to 40 seconds as it takes time to search and load the real time market data. 
 
 
 

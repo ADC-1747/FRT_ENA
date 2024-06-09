@@ -27,7 +27,8 @@ To analyse the effect of news on the price and volume of an equity/stock/share f
    **Azure Core Services** -
    1. Azure App Services - For delpoying the Flask based web application and also deploying the azure AI Bot.
 
-      <img width="960" alt="App services" src="https://github.com/ADC-1747/FRT_ENA/assets/148060235/c66610b6-6fe6-49d6-9362-f3976f41b2bb">
+      <img width="960" alt="web_app" src="https://github.com/ADC-1747/FRT_ENA/assets/148060235/443847d7-1e95-4889-8a23-6d4026f250f5">
+
 
       <img width="960" alt="Deploy" src="https://github.com/ADC-1747/FRT_ENA/assets/148060235/feedc98b-02ef-47c2-825a-c8b0fbb81bf6">
 

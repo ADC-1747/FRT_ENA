@@ -115,7 +115,7 @@ def refresh_news():
                     L_new_s.append([entry["title"] + entry["published"] , x.symbol])
                 time.sleep(0.25)
                 break
-            elif "low" in entry["title"].split(" ") or "loss" in entry["title"].split(" ") or "down" in entry["title"].split(" ") or "fall" in entry["title"].split(" ") or "below" in entry["title"].split(" ") or "sink" in entry["title"].split(" "):
+            elif "low" in entry["title"].split(" ") or "loss" in entry["title"].split(" ") or "down" in entry["title"].split(" ") or "fall" in entry["title"].split(" ") or "below" in entry["title"].split(" ") or "sink" in entry["title"].split(" ") or "drop" in entry["title"].split(" "):
                 if (entry["title"] + entry["published"] ) not in S_new_s: 
                     
                     S_new_s.append([entry["title"] + entry["published"] , x.symbol])

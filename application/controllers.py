@@ -207,5 +207,31 @@ def sell(symbol,sell_price):
 
     return redirect(url_for('portfolio'))
 
+@app.route("/networkgraph", methods=["GET", "POST"])
+def networkGraph():
+    # comps = Nifty.query.all()    
+    # tvl = TvDatafeedLive()
+    # ldfa = {}
+    # for x in comps:
+    #     print(x.symbol)
+    #     live_data=tvl.get_hist(symbol=x.symbol,exchange='NSE',interval=Interval.in_15_minute,n_bars=24,  extended_session=False, timeout=-1)
+    #     ldfa[x.symbol] = [live_data['open'].mean(), live_data['high'].mean(), live_data['low'].mean(), live_data['close'].mean(), live_data['volume'].mean()]
+    
+    # print(ldfa['BPCL'])
+
+    # # live_data.to_json("network_graph.json", orient="records", lines=True)
+    
+    # with open("network_graph.json", "w") as json_file:
+    #     json.dump(ldfa, json_file, indent=4)
+
+
+
+
+            
+
+    return render_template('big_picture.html')
+
+
+
 
 
